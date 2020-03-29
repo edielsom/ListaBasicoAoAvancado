@@ -45,6 +45,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_01_TrabalhandoComArray.cs" />
+    <Compile Include="_02.2_TrabalhandoComLista .cs" />
+    <Compile Include="_02.1_TrabalhandoComLista.cs" />
+    <Compile Include="_02_TrabalhandoComLista.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
