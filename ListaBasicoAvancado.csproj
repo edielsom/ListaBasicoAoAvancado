@@ -43,11 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
+    <Compile Include="Aula.cs" />
+    <Compile Include="Curso.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_01_TrabalhandoComArray.cs" />
     <Compile Include="_02.2_TrabalhandoComLista .cs" />
     <Compile Include="_02.1_TrabalhandoComLista.cs" />
+    <Compile Include="_03.1_TrabalhandoComConjuntos.cs" />
+    <Compile Include="_03_TrabalhandoComConjuntos.cs" />
     <Compile Include="_02_TrabalhandoComLista.cs" />
   </ItemGroup>
   <ItemGroup>

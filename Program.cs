@@ -14,7 +14,11 @@ namespace ListaBasicoAvancado
 
             //ManipulandoListaOrdenar();
 
-            ManipulandoListaOrdenar2();
+            //ManipulandoListaOrdenar2();
+
+            //TrabalhandoComConjuntos();
+
+            TrabalhandoComListaDeConjuntos();
             Console.ReadKey();
         }
 
