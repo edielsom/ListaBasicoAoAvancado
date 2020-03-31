@@ -40,11 +40,14 @@ namespace ListaBasicoAvancado
             Aluno outro = obj as Aluno;
 
             if (outro == null)
-            {
-                return false;
-            }
+               return false;
 
             return this.nome.Equals(outro.nome);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.nome.GetHashCode();
         }
     }
 }

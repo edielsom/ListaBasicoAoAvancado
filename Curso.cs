@@ -14,6 +14,8 @@ namespace ListaBasicoAvancado
         private string nome;
         //alunos deve ser um ISet. Alunos deve retornar ReadOnlyCollection
         private ISet<Aluno> alunos = new HashSet<Aluno>();
+
+        private IDictionary<int, Aluno> dicionarioAlunos = new Dictionary<int, Aluno>();
         public Curso(string instrutor, string nome)
         {
             this.instrutor = instrutor;
@@ -74,6 +76,7 @@ namespace ListaBasicoAvancado
         internal void Matricula(Aluno aluno)
         {
             alunos.Add(aluno);
+            this.dicionarioAlunos.Add(aluno.NumeroMatricula, aluno);
         }
 
         public override string ToString()
@@ -84,6 +87,28 @@ namespace ListaBasicoAvancado
         public bool EstaMatriculado(Aluno aluno)
         {
             return alunos.Contains(aluno);
+        }
+
+        internal Aluno BuscaMatriculado(int numeroMatricula)
+        {
+            Aluno aluno = null;
+            this.dicionarioAlunos.TryGetValue(numeroMatricula,out aluno);
+            return aluno;
+        }
+
+        internal Aluno BuscaMatriculaOld(int numeroMatricula)
+        {
+            foreach (var aluno in alunos)
+            {
+                if (aluno.NumeroMatricula == numeroMatricula)
+                    return aluno;
+            }
+            throw new Exception("Matrícula não encontrada: " + numeroMatricula);
+        }
+
+        internal void SubstituiAluno(Aluno aluno)
+        {
+            this.dicionarioAlunos[aluno.NumeroMatricula] = aluno;
         }
     }
 }

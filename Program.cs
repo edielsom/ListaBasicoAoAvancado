@@ -18,7 +18,9 @@ namespace ListaBasicoAvancado
 
             //TrabalhandoComConjuntos();
 
-            TrabalhandoComListaDeConjuntos();
+            //TrabalhandoComListaDeConjuntos();
+
+            TrabalhandoComListaDicionary();
             Console.ReadKey();
         }
 

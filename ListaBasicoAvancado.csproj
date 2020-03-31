@@ -51,6 +51,7 @@
     <Compile Include="_01_TrabalhandoComArray.cs" />
     <Compile Include="_02.2_TrabalhandoComLista .cs" />
     <Compile Include="_02.1_TrabalhandoComLista.cs" />
+    <Compile Include="_04_TrabalhandoComDicionary.cs" />
     <Compile Include="_03.1_TrabalhandoComConjuntos.cs" />
     <Compile Include="_03_TrabalhandoComConjuntos.cs" />
     <Compile Include="_02_TrabalhandoComLista.cs" />
